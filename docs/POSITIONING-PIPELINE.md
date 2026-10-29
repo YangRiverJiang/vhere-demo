@@ -6,6 +6,8 @@ Version 0.8.0-demo · October 29, 2026
 
 VHERE estimates a camera's position within a prepared visual map and turns that estimate into a continuous road navigation view. The runtime has three distinct responsibilities: visual localization, result validation, and client-side navigation presentation.
 
+The reference map is produced from **smartphone RTK + RGB camera capture**. The phone acquires the mapping observations, the server reconstructs the georeferenced visual map, and ordinary phones can later localize against it without RTK at query time.
+
 ![VHERE visual positioning and navigation workflow](../assets/workflow.svg)
 
 ## 1. Capture a current view
@@ -67,11 +69,13 @@ A visible lane center is a presentation choice, not a new measurement. Smooth mo
 
 ![Visual localization decisions, phone fallback, and the complete navigation flow](../assets/diagrams/localization-decision-flow.svg)
 
-## 5. Prepare the reference map with RTK and imagery
+## 5. Build the reference map from smartphone RTK and camera imagery
 
 ![Map preparation from synchronized imagery and RTK constraints](../assets/diagrams/map-preparation.svg)
 
-Map preparation takes place before the revisit. Synchronized camera images, calibration, exposure timestamps, and RTK observations are collected along the target roads.
+Map preparation takes place before the revisit. **The mapping capture device is a smartphone using its RTK positioning and RGB camera.** It records synchronized images, camera calibration, exposure timestamps and RTK observations along the target roads. The smartphone supplies the measurements; computational reconstruction and map assembly run on the server.
+
+RTK requires suitable GNSS observations and correction/reference data, so this mapping mode is different from using ordinary phone GPS fixes. Camera calibration, timing and installation assumptions remain part of the mapping configuration.
 
 Visual relationships provide local geometry and continuity. Qualified RTK constraints establish scale and georeferencing. Time alignment, coordinate conversion, height convention, and camera mounting assumptions affect the resulting map; an RTK fixed-status label alone does not certify every observation.
 
@@ -79,16 +83,18 @@ The mapping process organizes the camera trajectory, road-surface feature/semant
 
 This process builds an area-specific map and reference library; it does not imply retraining a general-purpose visual model.
 
+The existing campus M1 map merges multiple training captures. Smartphone-based acquisition is an input-provenance statement, not a claim that this map was built in one pass or that its road geometry has independently verified centimeter accuracy.
+
 ![Dense reference cloud and vectors in plan and oblique views](../assets/media/campus-dense-vectors.png)
 
 This crop uses 59 existing references marked ready by the map's own qualification checks. The RGB cloud is reconstructed from their stored depth, scale, and camera-to-map poses. Display decimation keeps the figure readable; there is no mesh completion, new inference, or manual alignment. Reference readiness is not an independent accuracy certificate.
 
 ### Localization references and display geometry
 
-| Layer | Purpose |
-| --- | --- |
-| Georeferenced visual map and reference library | Retrieval, matching, and geometric localization |
-| Road/lane and environment display assets | Road association and an understandable navigation scene |
+| Layer | Source | Purpose |
+| --- | --- | --- |
+| Georeferenced visual map and reference library | Smartphone RTK constraints and synchronized RGB imagery, reconstructed on the server | Retrieval, matching, and geometric localization |
+| Road/lane and environment display assets | OpenStreetMap, City of Calgary data, and reviewed schematic geometry | Road association and an understandable navigation scene |
 
 The display layer includes sourced external road/environment data and reviewed schematic geometry. Its full appearance is not a claim that every lane or road boundary was independently measured by the camera system. A rendered road can also extend beyond usable visual-reference coverage.
 

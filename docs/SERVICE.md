@@ -46,5 +46,5 @@ only the affected task/session IDs until a private transfer is arranged.
 
 The TLS pin above identifies the server certificate. The APK signing fingerprint
 in the Release assets identifies the app publisher; the two are different values.
-The repository remains a private release review until its owner chooses public
-distribution.
+The repository and Release assets are public. Access to the positioning service
+remains separately authorized through private tokens.

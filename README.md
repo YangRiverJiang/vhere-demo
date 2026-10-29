@@ -9,6 +9,8 @@
 
 VHERE matches smartphone camera observations to a prepared visual map and presents a continuous navigation position for vehicles.
 
+**The visual map is also built with a smartphone.** VHERE uses **smartphone RTK positioning and RGB camera imagery** to construct its own georeferenced visual localization map. The phone supplies the synchronized mapping observations; reconstruction runs on the server. Subsequent navigation uses this reusable map and does not require RTK on the query phone.
+
 ## See the navigation experience
 
 ![Recorded VHERE app and synchronized camera photographs](assets/media/navigation-camera-turn.gif)
@@ -31,7 +33,7 @@ The sketch uses the unchanged packaged road geometry. Visual support can vary in
 4. Open `Navigation → Connect`, obtain a private access token from the maintainer, and save it. The service URL and certificate pin are prefilled in this release.
 5. Enter the supported corridor, wait for location/service readiness, then enable `Camera`. Use `Stop camera` when finished and export the session if reporting a problem.
 
-Release assets in this private review repository require an authorized GitHub login. The APK contains no service token. Users do not need an RTK receiver for ordinary navigation.
+The APK and documentation are publicly available. Positioning-service access still requires a privately issued token, which is not included in the APK. Users do not need an RTK receiver for ordinary navigation.
 
 ## Service connection
 
@@ -76,7 +78,15 @@ The phone preserves image exposure time, calibration and valid phone observation
 
 ![Complementary visual evidence and geometric validation](assets/diagrams/visual-evidence.svg)
 
-Map preparation precedes navigation. Synchronized RTK observations and camera imagery establish a georeferenced visual map, road-surface layers and qualified image/3D references. Normal demo users only need their phone and authorized service access.
+### Build the visual map from smartphone RTK + camera data
+
+During mapping, the smartphone records synchronized RTK positions, RGB images, exposure timestamps and camera calibration. Visual reconstruction provides relative geometry; qualified RTK constraints establish metric scale and georeferencing. Server-side processing produces the BEV road-surface atlas, visual features, road-marking layers and qualified image/3D references used for later localization.
+
+RTK mapping still requires suitable GNSS observations and correction/reference data. It is distinct from ordinary uncorrected phone GPS. The existing campus map combines multiple training captures; it is not evidence of single-pass or centimeter-accurate mapping.
+
+**Visual localization map and navigation background are separate layers.** The phone-derived visual map supplies reference evidence for localization. The app's road/building background also uses OpenStreetMap and City of Calgary data, together with reviewed schematic geometry. The rendered environment therefore has a broader provenance than the visual map itself.
+
+Normal demo users only need their phone and authorized service access to query the prepared map; RTK belongs to map preparation.
 
 ![Observed BEV texture from the existing map](assets/media/campus-bev-texture.png)
 

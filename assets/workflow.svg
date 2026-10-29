@@ -11,9 +11,9 @@
 <text x="888" y="146" class="h">Navigate smoothly</text><text x="888" y="177" class="s">Road association,</text><text x="888" y="199" class="s">motion and heading</text>
 <path d="M262 169H301" class="line"/><path d="M542 169H581" class="line"/><path d="M822 169H861" class="line"/>
 <rect x="30" y="254" width="1060" height="52" rx="10" fill="#e5eefb"/><text x="48" y="286" class="s">Phone position, speed, and course support initialization, reference search, and display fallback.</text>
-<text x="30" y="354" class="h">Before the revisit: prepare the visual map</text>
+<text x="30" y="354" class="h">Before the revisit: map with a smartphone</text>
 <g fill="#fff" stroke="#d4deeb"><rect x="30" y="377" width="320" height="101" rx="13"/><rect x="400" y="377" width="320" height="101" rx="13"/><rect x="770" y="377" width="320" height="101" rx="13"/></g>
-<text x="48" y="413" class="h">RTK + camera imagery</text><text x="48" y="444" class="s">Synchronized capture and calibration</text>
+<text x="48" y="413" class="h">Smartphone RTK + camera</text><text x="48" y="444" class="s">Synchronized capture and calibration</text>
 <text x="418" y="413" class="h">Georeferenced map</text><text x="418" y="444" class="s">Visual geometry and quality checks</text>
 <text x="788" y="413" class="h">Visual reference library</text><text x="788" y="444" class="s">Used by each visual query above</text>
 <path d="M352 427H391" class="line"/><path d="M722 427H761" class="line"/>

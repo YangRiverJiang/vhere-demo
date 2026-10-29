@@ -26,7 +26,7 @@ Both GIFs are resized and palette-reduced versions of actual video frames. Their
 
 ![Stored campus map RGB texture](../assets/media/campus-bev-texture.png)
 
-The campus M1 research map combines the previously recorded training captures into a bird's-eye RGB atlas. This figure uses its stored 0.10 m display tiles. No new imagery is projected and no gaps are filled for presentation.
+The campus M1 research map combines smartphone RTK and synchronized RGB camera training captures into a georeferenced bird's-eye RGB atlas. The phone provides the mapping observations and the server constructs the map. This figure uses its stored 0.10 m display tiles. No new imagery is projected and no gaps are filled for presentation.
 
 The wider footprint makes coverage visible: a displayed road corridor is not evidence that every surrounding area or viewpoint is supported.
 

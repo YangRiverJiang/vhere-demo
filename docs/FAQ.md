@@ -6,7 +6,13 @@
 
 Camera observations are localized against a prepared visual map. The app presents the resulting position in a road/lane view and uses phone observations for assistance and continuity.
 
-### Does the phone need an RTK receiver?
+### Is the visual map also built with a smartphone?
+
+Yes. Mapping uses smartphone RTK positioning and synchronized RGB camera images, with the recorded calibration and exposure times. The server reconstructs the georeferenced BEV layers and visual/3D reference library from those observations. RTK needs suitable GNSS observations and correction/reference data; map reconstruction is not performed entirely on the phone.
+
+This describes the visual localization map. The app's road/building background also includes sourced and schematic display data. The existing campus map combines multiple captures, and its independent road-boundary accuracy has not been certified.
+
+### Is RTK required for ordinary navigation?
 
 No connected RTK receiver is required for normal demo use. RTK supports map preparation; the phone uses its camera, system position, and available speed/course observations at runtime.
 

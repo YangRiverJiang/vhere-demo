@@ -16,6 +16,7 @@ Do not uninstall or clear records merely to replace a signature-incompatible app
 The release passed build/lint/unit checks and scoped Pixel startup/public-HTTPS
 checks. This does not qualify outdoor position error; use the [field guide](FIELD-TEST.md).
 Release notes identify the exact app/server/map identities and known limitations.
-The GitHub repository remains private for review; changing it to public is a
-separate owner decision. The current branch is a single release snapshot without
-the earlier draft commit chain.
+The GitHub repository and Release assets are public. Service credentials remain
+private. The release tag identifies the original signed-app distribution snapshot;
+later documentation corrections can appear on the main branch without changing
+that APK or its signing identity.
