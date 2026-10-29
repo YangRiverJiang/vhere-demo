@@ -65,20 +65,7 @@ The app selects an available position source, associates it with a plausible roa
 
 A visible lane center is a presentation choice, not a new measurement. Smooth motion and road-aligned heading therefore need separate validation from the raw position and orientation estimates.
 
-```mermaid
-flowchart TD
-    A[Camera image, exposure time, calibration] --> B[Retrieve visual map references]
-    P[Phone position and motion] --> B
-    M[Prepared visual map] --> B
-    B --> C[Road-surface and 3D geometric matching]
-    C --> D{Evidence accepted?}
-    D -->|Yes| E[Original visual position and orientation]
-    D -->|No| F[Rejection reason]
-    E --> G[Source selection and road association]
-    F --> G
-    P --> G
-    G --> H[Continuous navigation view with explicit uncertainty]
-```
+![Visual localization decisions, phone fallback, and the complete navigation flow](../assets/diagrams/localization-decision-flow.svg)
 
 ## 5. Prepare the reference map with RTK and imagery
 

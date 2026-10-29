@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="1080" viewBox="0 0 1120 1080" role="img" aria-labelledby="title description">
+  <title id="title">VHERE visual localization and navigation decision flow</title>
+  <desc id="description">A camera image with exposure time and calibration, phone position and motion, and a prepared visual map feed visual-reference retrieval. Road-surface and 3D geometric matching produce evidence. Accepted evidence supplies the original visual position and orientation; rejected evidence preserves its reason. These outcomes and phone observations feed source selection and road association, followed by a continuous navigation view with explicit uncertainty.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto" markerUnits="strokeWidth">
+      <path d="M 0 0 L 9 4.5 L 0 9 Z" fill="#647b96"/>
+    </marker>
+    <style>
+      text { font-family: Arial, Helvetica, sans-serif; fill: #19364f; }
+      .heading { font-size: 28px; font-weight: 700; }
+      .caption { font-size: 17px; fill: #50677e; }
+      .label { font-size: 21px; font-weight: 600; text-anchor: middle; }
+      .detail { font-size: 19px; text-anchor: middle; }
+      .edge-label { font-size: 18px; font-weight: 700; fill: #526b85; }
+      .edge { fill: none; stroke: #647b96; stroke-width: 2.2; stroke-linejoin: round; marker-end: url(#arrow); }
+      .box { fill: #ffffff; stroke: #c2d2e6; stroke-width: 1.6; }
+      .input { fill: #edf3ff; stroke: #b6cbed; stroke-width: 1.6; }
+    </style>
+  </defs>
+  <rect width="1120" height="1080" rx="20" fill="#f4f7fb"/>
+  <text x="40" y="44" class="heading">VHERE | From a camera query to navigation</text>
+  <text x="40" y="77" class="caption">Validated visual estimates, phone-assisted source selection, and explicit uncertainty.</text>
+
+  <g id="phone" data-node="true">
+    <rect x="50" y="110" width="280" height="90" rx="12" class="input"/>
+    <text x="190" y="148" class="label"><tspan x="190">Phone position</tspan><tspan x="190" dy="28">and motion</tspan></text>
+  </g>
+  <g id="camera" data-node="true">
+    <rect x="420" y="110" width="280" height="90" rx="12" class="input"/>
+    <text x="560" y="141" class="detail"><tspan x="560">Camera image, exposure time,</tspan><tspan x="560" dy="29">and calibration</tspan></text>
+  </g>
+  <g id="map" data-node="true">
+    <rect x="790" y="110" width="280" height="90" rx="12" class="input"/>
+    <text x="930" y="148" class="label"><tspan x="930">Prepared</tspan><tspan x="930" dy="28">visual map</tspan></text>
+  </g>
+
+  <path d="M190 200 V224 H500 V250" class="edge"/>
+  <path d="M560 200 V250" class="edge"/>
+  <path d="M930 200 V224 H620 V250" class="edge"/>
+  <g id="retrieval" data-node="true">
+    <rect x="350" y="250" width="420" height="80" rx="12" class="box"/>
+    <text x="560" y="283" class="label"><tspan x="560">Retrieve visual</tspan><tspan x="560" dy="28">map references</tspan></text>
+  </g>
+  <path d="M560 330 V380" class="edge"/>
+  <g id="matching" data-node="true">
+    <rect x="350" y="380" width="420" height="85" rx="12" class="box"/>
+    <text x="560" y="415" class="label"><tspan x="560">Road-surface and</tspan><tspan x="560" dy="28">3D geometric matching</tspan></text>
+  </g>
+  <path d="M560 465 V490" class="edge"/>
+  <g id="decision" data-node="true">
+    <polygon points="560,490 690,560 560,630 430,560" fill="#e6efff" stroke="#a8bfdf" stroke-width="1.8"/>
+    <text x="560" y="553" class="label"><tspan x="560">Evidence</tspan><tspan x="560" dy="28">accepted?</tspan></text>
+  </g>
+  <path d="M430 560 H310 V710" class="edge"/>
+  <text x="329" y="653" class="edge-label">Yes</text>
+  <path d="M690 560 H810 V710" class="edge"/>
+  <text x="830" y="653" class="edge-label">No</text>
+  <g id="accepted" data-node="true">
+    <rect x="160" y="710" width="300" height="100" rx="12" fill="#e7f4ef" stroke="#a4cbbd" stroke-width="1.6"/>
+    <text x="310" y="751" class="label"><tspan x="310">Original visual position</tspan><tspan x="310" dy="29">and orientation</tspan></text>
+  </g>
+  <g id="rejected" data-node="true">
+    <rect x="660" y="710" width="300" height="100" rx="12" class="box"/>
+    <text x="810" y="768" class="label">Rejection reason</text>
+  </g>
+  <path d="M310 810 V831 H480 V850" class="edge"/>
+  <path d="M810 810 V831 H640 V850" class="edge"/>
+  <path d="M50 155 H24 V890 H350" class="edge"/>
+  <text x="57" y="873" class="caption">Phone observations / fallback</text>
+  <g id="selection" data-node="true">
+    <rect x="350" y="850" width="420" height="80" rx="12" class="box"/>
+    <text x="560" y="883" class="label"><tspan x="560">Source selection</tspan><tspan x="560" dy="28">and road association</tspan></text>
+  </g>
+  <path d="M560 930 V970" class="edge"/>
+  <g id="navigation" data-node="true">
+    <rect x="280" y="970" width="560" height="86" rx="12" fill="#e9effb" stroke="#b6cbed" stroke-width="1.6"/>
+    <text x="560" y="1006" class="label"><tspan x="560">Continuous navigation view</tspan><tspan x="560" dy="29">with explicit uncertainty</tspan></text>
+  </g>
+</svg>
