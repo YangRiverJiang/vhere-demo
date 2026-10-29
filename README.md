@@ -9,6 +9,12 @@
 
 VHERE matches smartphone camera observations to a prepared visual map and presents a continuous navigation position for vehicles.
 
+## User hardware: camera + internet
+
+**Ordinary navigation requires no raw GNSS measurements, RTK receiver, user-operated base station, or RTK correction feed on the user device.** RTK georeferencing is handled during map preparation. The online service performs visual matching and geometric computation, so the client needs no dedicated surveying hardware or on-device neural accelerator.
+
+The user-side hardware concept is **a device with a camera and an internet connection**. The current downloadable client is **Android 10+** and needs a compatible camera, ordinary system location, and authorized service access within the mapped area. System location supports admission, reference search, motion and fallback; access to raw satellite measurements is unnecessary. Other device platforms require their own compatible client integration.
+
 **The visual map is also built with a smartphone.** VHERE uses **smartphone RTK positioning and RGB camera imagery** to construct its own georeferenced visual localization map. The phone supplies the synchronized mapping observations; reconstruction runs on the server. Subsequent navigation uses this reusable map and does not require RTK on the query phone.
 
 ## See the navigation experience

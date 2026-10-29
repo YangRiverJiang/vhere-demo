@@ -8,6 +8,8 @@ Version 0.8.0-demo · October 29, 2026 · App `0.8.0-demo`
 
 Use an Android 10 or newer phone with a rear camera, precise foreground location permission, and a network connection to the VHERE service. The supported test corridor is Collegiate Boulevard NW, both directions, within the prepared scene. Authorized service access is required.
 
+The navigation phone does **not** need raw GNSS measurement access, an RTK-capable receiver, a user-operated base station, or an RTK correction feed. It uses ordinary system location alongside camera images; the server performs visual localization against the prepared map. A device lacking raw-GNSS APIs is not excluded for that reason. Camera compatibility, location, foreground operation and network requirements still apply to this Android release.
+
 Current device evidence includes Pixel 5 display checks. Other devices require separate camera, thermal, and rendering validation. The phone does not need a connected RTK receiver for normal demo use; its system location and motion observations remain part of the product workflow.
 
 ## 2. Install or update

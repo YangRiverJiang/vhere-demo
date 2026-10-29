@@ -8,6 +8,8 @@ VHERE estimates a camera's position within a prepared visual map and turns that 
 
 The reference map is produced from **smartphone RTK + RGB camera capture**. The phone acquires the mapping observations, the server reconstructs the georeferenced visual map, and ordinary phones can later localize against it without RTK at query time.
 
+The navigation client does not need raw GNSS measurements, an RTK receiver, a user-operated base station or a correction feed. Camera observations and normal system-location outputs are sent through the supported client interface. The server provides visual inference; RTK-derived map georeferencing is reused from the preparation stage.
+
 ![VHERE visual positioning and navigation workflow](../assets/workflow.svg)
 
 ## 1. Capture a current view

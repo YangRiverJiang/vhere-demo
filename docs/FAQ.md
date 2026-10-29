@@ -6,6 +6,12 @@
 
 Camera observations are localized against a prepared visual map. The app presents the resulting position in a road/lane view and uses phone observations for assistance and continuity.
 
+### What hardware does the user need?
+
+The client hardware concept is **camera + internet**, with the visual computation provided by the server. Ordinary navigation requires no raw GNSS measurements, RTK receiver, user-operated base station, RTK correction subscription, or dedicated local GPU. RTK is used when preparing the reusable visual map.
+
+The current downloadable app is for Android 10+ and also needs compatible camera metadata, genuine fresh system location, authorized service access and mapped-area support. It uses system location outputs rather than raw satellite measurements. Other platforms require compatible camera, calibration, location and HTTPS client integration.
+
 ### Is the visual map also built with a smartphone?
 
 Yes. Mapping uses smartphone RTK positioning and synchronized RGB camera images, with the recorded calibration and exposure times. The server reconstructs the georeferenced BEV layers and visual/3D reference library from those observations. RTK needs suitable GNSS observations and correction/reference data; map reconstruction is not performed entirely on the phone.
@@ -15,6 +21,8 @@ This describes the visual localization map. The app's road/building background a
 ### Is RTK required for ordinary navigation?
 
 No connected RTK receiver is required for normal demo use. RTK supports map preparation; the phone uses its camera, system position, and available speed/course observations at runtime.
+
+Users do not need to deploy a base station or supply an RTK correction stream during navigation. Those mapping-side requirements are handled before the visual map is reused.
 
 ### Is this entirely GNSS-free?
 
