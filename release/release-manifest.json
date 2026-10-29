@@ -1,0 +1,50 @@
+{
+  "schema": "vhere.demo-release.v1",
+  "status": "signed-evaluation-release-field-testing-pending",
+  "version_name": "0.8.0-demo",
+  "version_code": 19,
+  "release_tag": "v0.8.0-demo",
+  "release_date": "2026-10-29",
+  "application_id": "com.vhere.demo",
+  "minimum_android_api": 29,
+  "debuggable": false,
+  "source_commit": "22976f0b573f2b1e80b61b417400fb331fbed369",
+  "artifact": {
+    "filename": "VHERE-demo-0.8.0-release.apk",
+    "bytes": 3567793,
+    "sha256": "bbcd05d68914d981541bf98c3fdc57006c36a399eb8428689cc5083aab46222a",
+    "download_url": "https://github.com/YangRiverJiang/vhere-demo/releases/download/v0.8.0-demo/VHERE-demo-0.8.0-release.apk",
+    "signing_certificate_sha256": "f5a35306e9cc9d3caef09a16f17c2fea105f0d14b49d3d60f286a02ae5d7ecba"
+  },
+  "service": {
+    "endpoint": "https://70.72.235.104:28780",
+    "certificate_sha256": "4330e67d7c995c74bc2fb316600fd45371c1361f6becea1bddff79eec02a60c3",
+    "client_token_included": false,
+    "recorded_input_mode": false,
+    "native_source": "7d1e984f98cc22cd1985c02b729d33e02083c582",
+    "HTTP_source": "407dd547ea5f6b4f27e86bdf051f75719f4f4c1f",
+    "BEV_source": "9535ca513d51536b46e5b1aee4123ad02998a0ff",
+    "map_sha256": "e981c159bd8145f880323a8c5fb9e68fcce7bec2800965088b46342412e70a7c"
+  },
+  "supported_areas": [
+    "Collegiate Boulevard NW, both travel directions, two-lane demo within the prepared scene"
+  ],
+  "checks": {
+    "web_tests_passed": 125,
+    "JVM_tests_passed": 24,
+    "release_build_and_lint_passed": true,
+    "Pixel_5_non_debuggable_install_passed": true,
+    "Pixel_public_HTTPS_health_HTTP": 200,
+    "temporary_test_package_removed": true,
+    "original_private_files_retained": 1241,
+    "original_external_files_retained": 499,
+    "unchanged_display_map_hashes_verified": true
+  },
+  "independent_release_field_accuracy_qualified": false,
+  "public_cellular_performance_qualified": false,
+  "raw_field_archives_included": false,
+  "model_weights_included": false,
+  "app_backend_source_included": false,
+  "documentation_language": "en",
+  "licensing": "VHERE Demo Evaluation License 1.0; third-party rights retained separately"
+}

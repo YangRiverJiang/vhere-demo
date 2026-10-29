@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 580" role="img" aria-label="Freeze first, evaluate second">
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#7890ad"/></marker><style>text{font-family:system-ui,sans-serif;fill:#20394f}.title{font-size:25px;font-weight:750;fill:#16354f}.sub{font-size:15px;fill:#60758c}.head{font-size:18px;font-weight:700}.body{font-size:15px;fill:#4e657d}.line{fill:none;stroke:#7890ad;stroke-width:2.5;marker-end:url(#arrow)}.dash{stroke-dasharray:6 5}</style></defs>
+<rect width="1120" height="580" rx="20" fill="#f4f7fb"/>
+<text x="30" y="42" class="title">VHERE | Freeze first, evaluate second</text>
+<text x="30" y="73" class="sub">Evidence design for the existing campus study; no new predictions are generated for these figures.</text>
+<rect x="30" y="115" width="290" height="110" rx="12" fill="#fff" stroke="#cfdaea"/>
+<text x="46" y="145" class="head">Mapping captures</text>
+<text x="46" y="172" class="body">Build M1 from training captures</text>
+<text x="46" y="193" class="body">only.</text>
+<rect x="400" y="115" width="300" height="110" rx="12" fill="#fff" stroke="#cfdaea"/>
+<text x="416" y="145" class="head">Frozen visual map</text>
+<text x="416" y="172" class="body">No query-capture leakage into</text>
+<text x="416" y="193" class="body">reference construction.</text>
+<rect x="790" y="115" width="300" height="110" rx="12" fill="#fff" stroke="#cfdaea"/>
+<text x="806" y="145" class="head">Held-out Q3 / Q4</text>
+<text x="806" y="172" class="body">Preserve frame IDs, pixels,</text>
+<text x="806" y="193" class="body">timestamps and original acceptance.</text>
+<path d="M320 170H391" class="line"/>
+<rect x="400" y="295" width="300" height="110" rx="12" fill="#e6f2ed" stroke="#cfdaea"/>
+<text x="416" y="325" class="head">Freeze predictions</text>
+<text x="416" y="352" class="body">Keep source hashes and all</text>
+<text x="416" y="373" class="body">rejection / failure outcomes.</text>
+<path d="M550 225V286" class="line"/>
+<path d="M940 225V260H650V286" class="line"/>
+<rect x="30" y="295" width="290" height="110" rx="12" fill="#fff" stroke="#cfdaea"/>
+<text x="46" y="325" class="head">Independent reference</text>
+<text x="46" y="352" class="body">Fixed GGA observations; used only</text>
+<text x="46" y="373" class="body">for evaluation.</text>
+<rect x="790" y="295" width="300" height="110" rx="12" fill="#fff" stroke="#cfdaea"/>
+<text x="806" y="325" class="head">Client measurements</text>
+<text x="806" y="352" class="body">Separate phone request timing and</text>
+<text x="806" y="373" class="body">display replay evidence.</text>
+<rect x="235" y="465" width="650" height="75" rx="12" fill="#fff" stroke="#cfdaea"/>
+<text x="251" y="495" class="head">Score and report the correct denominator</text>
+<text x="251" y="522" class="body">Frame error, accepted subset, fallback coverage and request latency stay distinct.</text>
+<path d="M550 405V456" class="line"/>
+<path d="M175 405V440H350V456" class="line dash"/>
+<path d="M940 405V440H770V456" class="line dash"/>
+</svg>

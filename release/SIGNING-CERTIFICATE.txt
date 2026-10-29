@@ -1,0 +1,9 @@
+VHERE Demo 0.8.0 APK signing certificate
+
+SHA-256: f5a35306e9cc9d3caef09a16f17c2fea105f0d14b49d3d60f286a02ae5d7ecba
+Application ID: com.vhere.demo
+Version code: 19
+Release build: non-debuggable
+
+This identifies the APK publisher certificate. It is not the HTTPS server pin.
+Private signing keys and service credentials are not distributed.

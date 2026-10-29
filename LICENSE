@@ -1,0 +1,39 @@
+VHERE Demo Evaluation License 1.0
+Copyright (c) 2026 YangRiverJiang. All rights reserved except as granted below.
+
+1. Scope. This license applies only to VHERE-owned material in this demo
+distribution and the accompanying VHERE Demo application. Third-party software,
+data, models and materials retain their own licenses, which take precedence for
+those components. This license does not grant rights to third-party material.
+
+2. Evaluation grant. You may download, install and run an unmodified VHERE Demo
+APK for personal, educational, non-commercial research and evaluation. You may
+keep backup copies. You may read and reproduce VHERE-owned documentation and
+derived figures for those purposes with attribution to VHERE and this license.
+Keep the copyright, provenance, limitations and third-party notices intact.
+
+3. Other uses. Commercial use, sale, sublicensing, redistribution of the VHERE
+APK, or distribution of modified VHERE-owned software requires prior written
+permission from the maintainer and any additional third-party permissions.
+This restriction does not limit rights independently granted by a third-party
+license. No app/backend source or model-weight license is granted by the presence
+of a binary or documentation in this repository. No trademark rights are granted.
+
+4. Service access. Installing the APK does not grant service access. Access
+tokens are issued separately to authorized testers and must not be redistributed.
+The demonstration service may be unavailable or withdrawn. Use is limited to the
+documented test area and the accompanying privacy and data policy.
+
+5. Research scope. This is a research demonstration, not a certified driving aid.
+Reported recorded-route results do not guarantee accuracy or availability on a
+new drive. Lane geometry may be schematic. A passenger should operate the device
+during vehicle testing; the driver remains responsible for road decisions.
+
+6. No warranty. TO THE EXTENT PERMITTED BY APPLICABLE LAW, THE VHERE-OWNED
+MATERIAL IS PROVIDED AS IS, WITHOUT WARRANTIES OF MERCHANTABILITY, FITNESS FOR
+A PARTICULAR PURPOSE OR NON-INFRINGEMENT. THE COPYRIGHT HOLDER IS NOT LIABLE
+FOR CLAIMS OR DAMAGES ARISING FROM ITS USE. Applicable rights that cannot be
+excluded remain unaffected.
+
+Contact: https://github.com/YangRiverJiang/vhere-demo/issues
+Use a task identifier rather than private images, coordinates or credentials.

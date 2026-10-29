@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 550" role="img" aria-labelledby="title desc">
+<title id="title">VHERE visual positioning and navigation</title><desc id="desc">A current camera image is matched to prepared visual references, validated, and displayed in road context. Phone observations support initialization and continuity. RTK and imagery prepare the reference map before the drive.</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#7892af"/></marker><style>text{font-family:system-ui,sans-serif;fill:#183047}.h{font-size:19px;font-weight:700}.s{font-size:15px;fill:#526b82}.k{font-size:14px;font-weight:700;letter-spacing:1px;fill:#2967dc}.line{fill:none;stroke:#7892af;stroke-width:2.5;marker-end:url(#arrow)}</style></defs>
+<rect width="1120" height="550" rx="20" fill="#f4f7fb"/>
+<text x="30" y="40" class="k">VHERE · VISUAL POSITIONING FOR ROAD NAVIGATION</text>
+<text x="30" y="85" class="h">During a drive</text>
+<g fill="#fff" stroke="#cddbed"><rect x="30" y="110" width="230" height="118" rx="13"/><rect x="310" y="110" width="230" height="118" rx="13"/><rect x="590" y="110" width="230" height="118" rx="13"/><rect x="870" y="110" width="220" height="118" rx="13"/></g>
+<text x="48" y="146" class="h">Capture a view</text><text x="48" y="177" class="s">Image, exposure time,</text><text x="48" y="199" class="s">camera metadata</text>
+<text x="328" y="146" class="h">Localize visually</text><text x="328" y="177" class="s">Road-surface matching</text><text x="328" y="199" class="s">and 3D geometry</text>
+<text x="608" y="146" class="h">Check the result</text><text x="608" y="177" class="s">Position, orientation,</text><text x="608" y="199" class="s">or an explicit reason</text>
+<text x="888" y="146" class="h">Navigate smoothly</text><text x="888" y="177" class="s">Road association,</text><text x="888" y="199" class="s">motion and heading</text>
+<path d="M262 169H301" class="line"/><path d="M542 169H581" class="line"/><path d="M822 169H861" class="line"/>
+<rect x="30" y="254" width="1060" height="52" rx="10" fill="#e5eefb"/><text x="48" y="286" class="s">Phone position, speed, and course support initialization, reference search, and display fallback.</text>
+<text x="30" y="354" class="h">Before the revisit: prepare the visual map</text>
+<g fill="#fff" stroke="#d4deeb"><rect x="30" y="377" width="320" height="101" rx="13"/><rect x="400" y="377" width="320" height="101" rx="13"/><rect x="770" y="377" width="320" height="101" rx="13"/></g>
+<text x="48" y="413" class="h">RTK + camera imagery</text><text x="48" y="444" class="s">Synchronized capture and calibration</text>
+<text x="418" y="413" class="h">Georeferenced map</text><text x="418" y="444" class="s">Visual geometry and quality checks</text>
+<text x="788" y="413" class="h">Visual reference library</text><text x="788" y="444" class="s">Used by each visual query above</text>
+<path d="M352 427H391" class="line"/><path d="M722 427H761" class="line"/>
+<text x="30" y="520" class="s">Raw visual estimates, phone fallback, and navigation animation are evaluated separately.</text>
+</svg>

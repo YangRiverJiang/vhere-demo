@@ -1,0 +1,106 @@
+{
+  "schema": "vhere.documentary-media.v1",
+  "language": "en",
+  "map_identity_SHA256": "e981c159bd8145f880323a8c5fb9e68fcce7bec2800965088b46342412e70a7c",
+  "map_qualification": "Existing research artifact, not independent surveyed-accuracy qualification",
+  "raw_data_distributed": false,
+  "media": [
+    {
+      "file": "navigation-camera-turn.gif",
+      "kind": "recorded-app-camera-GIF",
+      "source_SHA256": "a0363c5c46b38ec13e0175b1d21b8ce86d89f47de2e8d5d71c565bd79c5947b6",
+      "source_video_start_s": 13.7,
+      "first_recorded_source_s": 119.52,
+      "source_span_s": 12,
+      "presentation_speed": 1,
+      "encoded_fps": 8,
+      "frames": 96,
+      "duration_s": 12.01,
+      "dimensions": [
+        704,
+        808
+      ],
+      "bytes": 6551515,
+      "SHA256": "4bd11a9a8fc878d05da971b00514829a23a3fcc39a4a6058e4719885b6b9b341",
+      "pixels": "resized/palettized original frames; no generated frames",
+      "source_description": "Actual Pixel 5 UI capture, recorded phone observations and fixed positioning answers; original still photographs in the camera panel."
+    },
+    {
+      "file": "navigation-reacquisition.gif",
+      "kind": "recorded-app-camera-GIF",
+      "source_SHA256": "a27c5b3b6e70b0c8025ba76f5ddc33a17d1784d85150f1fe2b035446b2747158",
+      "source_video_start_s": 17.0,
+      "first_recorded_source_s": 344.54,
+      "source_span_s": 10,
+      "presentation_speed": 1,
+      "encoded_fps": 8,
+      "frames": 80,
+      "duration_s": 10.01,
+      "dimensions": [
+        704,
+        808
+      ],
+      "bytes": 3276105,
+      "SHA256": "097c5d20fa64ff56281b8de734b0fe1ccacce7285168a4058c9c62229bbe3404",
+      "pixels": "resized/palettized original frames; no generated frames",
+      "source_description": "Actual Pixel 5 UI capture, recorded phone observations and fixed positioning answers; original still photographs in the camera panel."
+    },
+    {
+      "file": "campus-bev-texture.png",
+      "kind": "rendered-existing-map-data",
+      "map_SHA256": "e981c159bd8145f880323a8c5fb9e68fcce7bec2800965088b46342412e70a7c",
+      "vector_model_SHA256": "fdbaf6fd00b37b2803b304a3fb4d01e86d6751b93d854839038d872e52bc32d6",
+      "dense_index_SHA256": "431a88c8f3299498e5c4b7c3887331e1c63c33d2b5c46d8f13255cd3b295191e",
+      "dimensions": [
+        1954,
+        940
+      ],
+      "bytes": 271840,
+      "SHA256": "6a864aa5be10fa82bce7967e21dedd440e96bb0f7d0a55bc1cec524dd9dab746",
+      "no_new_inference": true,
+      "no_geometric_adjustment": true
+    },
+    {
+      "file": "campus-bev-vectors.png",
+      "kind": "rendered-existing-map-data",
+      "map_SHA256": "e981c159bd8145f880323a8c5fb9e68fcce7bec2800965088b46342412e70a7c",
+      "vector_model_SHA256": "fdbaf6fd00b37b2803b304a3fb4d01e86d6751b93d854839038d872e52bc32d6",
+      "dense_index_SHA256": "431a88c8f3299498e5c4b7c3887331e1c63c33d2b5c46d8f13255cd3b295191e",
+      "dimensions": [
+        2302,
+        1094
+      ],
+      "bytes": 473008,
+      "SHA256": "251512b924028a7bdd5061262ccbada3d3c4389e2221e3e2733d969f65085f0b",
+      "no_new_inference": true,
+      "no_geometric_adjustment": true
+    },
+    {
+      "file": "campus-dense-vectors.png",
+      "kind": "rendered-existing-map-data",
+      "map_SHA256": "e981c159bd8145f880323a8c5fb9e68fcce7bec2800965088b46342412e70a7c",
+      "vector_model_SHA256": "fdbaf6fd00b37b2803b304a3fb4d01e86d6751b93d854839038d872e52bc32d6",
+      "dense_index_SHA256": "431a88c8f3299498e5c4b7c3887331e1c63c33d2b5c46d8f13255cd3b295191e",
+      "dimensions": [
+        2228,
+        1175
+      ],
+      "bytes": 2142278,
+      "SHA256": "6221d6fea4a64ef1279d2e63a2e82dcd76c558fefc73d6cf359e57b3f7a302bc",
+      "no_new_inference": true,
+      "no_geometric_adjustment": true
+    },
+    {
+      "file": "navigation-camera-turn-poster.jpg",
+      "kind": "GIF-first-frame-poster",
+      "SHA256": "246dda39932aa1468fa82d46b754c6c6a0a578a70c82d5fba133a7816ed9a803",
+      "bytes": 148601
+    },
+    {
+      "file": "navigation-reacquisition-poster.jpg",
+      "kind": "GIF-first-frame-poster",
+      "SHA256": "f660ca4075da9ab68e480574f35346ad525fc98a1e6e92fdc820b7169e644846",
+      "bytes": 148718
+    }
+  ]
+}

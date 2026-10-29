@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 560" role="img" aria-label="Visual evidence and geometric acceptance">
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#7890ad"/></marker><style>text{font-family:system-ui,sans-serif;fill:#20394f}.title{font-size:25px;font-weight:750;fill:#16354f}.sub{font-size:15px;fill:#60758c}.head{font-size:18px;font-weight:700}.body{font-size:15px;fill:#4e657d}.line{fill:none;stroke:#7890ad;stroke-width:2.5;marker-end:url(#arrow)}.dash{stroke-dasharray:6 5}</style></defs>
+<rect width="1120" height="560" rx="20" fill="#f4f7fb"/>
+<text x="30" y="42" class="title">VHERE | Visual evidence and geometric acceptance</text>
+<text x="30" y="73" class="sub">Method schematic. Complementary branches provide evidence; this is not a measured timing diagram.</text>
+<rect x="30" y="115" width="240" height="115" rx="12" fill="#fff" stroke="#cfdaea"/>
+<text x="46" y="145" class="head">Image + metadata</text>
+<text x="46" y="172" class="body">Exposure time, intrinsics,</text>
+<text x="46" y="193" class="body">crop and phone</text>
+<text x="46" y="214" class="body">initialization</text>
+<rect x="335" y="105" width="310" height="120" rx="12" fill="#fff" stroke="#cfdaea"/>
+<text x="351" y="135" class="head">Road-surface evidence</text>
+<text x="351" y="162" class="body">Bird&#x27;s-eye features and markings</text>
+<text x="351" y="183" class="body">compared with the stored map</text>
+<rect x="335" y="270" width="310" height="120" rx="12" fill="#fff" stroke="#cfdaea"/>
+<text x="351" y="300" class="head">Image / 3D evidence</text>
+<text x="351" y="327" class="body">Cross-view matches and qualified 3D</text>
+<text x="351" y="348" class="body">references constrain pose</text>
+<rect x="715" y="180" width="370" height="150" rx="12" fill="#e6f2ed" stroke="#cfdaea"/>
+<text x="731" y="210" class="head">Geometry and support checks</text>
+<text x="731" y="237" class="body">Consistency, reference support, profile-</text>
+<text x="731" y="258" class="body">dependent motion evidence and explicit</text>
+<text x="731" y="279" class="body">rejection reasons</text>
+<path d="M270 155H300V165H326" class="line"/>
+<path d="M270 193H300V325H326" class="line"/>
+<path d="M645 165H680V215H706" class="line"/>
+<path d="M645 325H680V285H706" class="line"/>
+<rect x="715" y="390" width="370" height="105" rx="12" fill="#fff" stroke="#cfdaea"/>
+<text x="731" y="420" class="head">Original output contract</text>
+<text x="731" y="447" class="body">Accepted position and orientation, or</text>
+<text x="731" y="468" class="body">rejection / failure / expiration</text>
+<path d="M900 330V381" class="line"/>
+<text x="30" y="470" class="sub">Map and model identity remain fixed for a query.</text>
+<text x="30" y="498" class="sub">A displayed lane center never rewrites this raw estimate.</text>
+</svg>

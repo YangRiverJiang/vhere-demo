@@ -1,0 +1,54 @@
+{
+  "source_file_SHA256": {
+    "Q3": "b1810b1ce1b03e44127e0e4db648921200ed4b20d2ddc23db115a6608ae541a0",
+    "Q4": "9cc796d04fb5b1e92906030a9cc0f9fe10743cb86c9115ddf200b397d3b3fa1b",
+    "prior_derived_summary": "8bbb7634918b6a1aa1bf78433a586be91ca7abbade9c94739806a6fe3db549f0"
+  },
+  "figures": [
+    {
+      "file": "assets/results/final-time-series.png",
+      "sha256": "febea05fed1b097dd8a2a33b5a5cb2c2b21ca8322f54eaff89c06a4a35a1e046",
+      "scope": "Recorded campus offline output policy; phone fallback included. Frame-weighted reference errors; not new release field testing."
+    },
+    {
+      "file": "assets/results/final-spatial-error.png",
+      "sha256": "be8857e55d7b648510827795e71c38a690ecca744a578759b44868933d520fda",
+      "scope": "Recorded campus offline output policy; phone fallback included. Frame-weighted reference errors; not new release field testing. Origins translated only; no fitted alignment."
+    },
+    {
+      "file": "assets/results/final-error-speed.png",
+      "sha256": "ef57f5e4996c296664abac3f1e4cfd54562d7c43fcb10433a9ed265c727ffa29",
+      "scope": "Recorded campus offline output policy; phone fallback included. Frame-weighted reference errors; not new release field testing. Speed association is descriptive, not causal."
+    },
+    {
+      "file": "assets/results/final-distributions.png",
+      "sha256": "31940c2eb6b8359f709cf314c4abd4ea8799388427c7ac4fdd1e34285d20b286",
+      "scope": "Recorded campus offline output policy; phone fallback included. Frame-weighted reference errors; not new release field testing."
+    },
+    {
+      "file": "assets/results/final-motion-strata.png",
+      "sha256": "987813b24130aedac748ed88274eb38b1c6e6c0285642721e14dac00dbe78200",
+      "scope": "Recorded campus offline output policy; phone fallback included. Frame-weighted reference errors; not new release field testing. Diagnostic strata overlap; every frame in each group is retained."
+    },
+    {
+      "file": "assets/results/final-error-episode.png",
+      "sha256": "89aefdf70246859a8b2e106f280890ed1913c7e50f9f66dceacd260da4769744",
+      "scope": "Recorded campus offline output policy; phone fallback included. Frame-weighted reference errors; not new release field testing. Post hoc longest >5 m run: 219 frames / 7.277 s; no causal claim."
+    },
+    {
+      "file": "assets/results/request-latency.png",
+      "sha256": "805c4674357e09506b308564a552195fae5caf551d104cfc94c6f50fe57c9551",
+      "scope": "Actual Pixel 5 recorded-input HTTPS transactions; all 109 requests retained. Not exposure-to-display latency or new release field accuracy."
+    },
+    {
+      "file": "assets/results/request-cadence.png",
+      "sha256": "07695a84fbc51be52c4e45dd4de79d4c79bcc6dc4dafc84dc171a5671af1c80d",
+      "scope": "Actual Pixel 5 recorded-input HTTPS transactions; all 109 requests retained. Not exposure-to-display latency or new release field accuracy. Phone fallback can supply outputs between image results."
+    },
+    {
+      "file": "assets/results/display-continuity.png",
+      "sha256": "644ba006a3cd3772907ef468445dea85945bb5ac99db2d24bd5eb89bc72c3a06",
+      "scope": "Fixed-answer display replay; not independent position or heading truth"
+    }
+  ]
+}

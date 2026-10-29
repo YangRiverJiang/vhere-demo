@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 555" role="img" aria-label="Preparing a georeferenced visual map">
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#7890ad"/></marker><style>text{font-family:system-ui,sans-serif;fill:#20394f}.title{font-size:25px;font-weight:750;fill:#16354f}.sub{font-size:15px;fill:#60758c}.head{font-size:18px;font-weight:700}.body{font-size:15px;fill:#4e657d}.line{fill:none;stroke:#7890ad;stroke-width:2.5;marker-end:url(#arrow)}.dash{stroke-dasharray:6 5}</style></defs>
+<rect width="1120" height="555" rx="20" fill="#f4f7fb"/>
+<text x="30" y="42" class="title">VHERE | Preparing a georeferenced visual map</text>
+<text x="30" y="73" class="sub">Mapping-side preparation precedes the revisit; normal phone navigation uses the prepared references.</text>
+<rect x="30" y="115" width="300" height="120" rx="12" fill="#fff" stroke="#cfdaea"/>
+<text x="46" y="145" class="head">Synchronized capture</text>
+<text x="46" y="172" class="body">Images, camera calibration,</text>
+<text x="46" y="193" class="body">exposure timestamps and RTK</text>
+<text x="46" y="214" class="body">observations</text>
+<rect x="410" y="115" width="300" height="120" rx="12" fill="#fff" stroke="#cfdaea"/>
+<text x="426" y="145" class="head">Quality and geometry</text>
+<text x="426" y="172" class="body">Qualified RTK constraints plus</text>
+<text x="426" y="193" class="body">visual relationships establish</text>
+<text x="426" y="214" class="body">scale and georeferencing.</text>
+<rect x="790" y="115" width="300" height="120" rx="12" fill="#fff" stroke="#cfdaea"/>
+<text x="806" y="145" class="head">Frozen map identity</text>
+<text x="806" y="172" class="body">Coordinate reference, coverage,</text>
+<text x="806" y="193" class="body">version and content checksums</text>
+<path d="M330 175H401" class="line"/>
+<path d="M710 175H781" class="line"/>
+<rect x="30" y="325" width="300" height="135" rx="12" fill="#fff" stroke="#cfdaea"/>
+<text x="46" y="355" class="head">BEV texture and features</text>
+<text x="46" y="382" class="body">Observed road surface, semantic</text>
+<text x="46" y="403" class="body">structure and stored marking</text>
+<text x="46" y="424" class="body">geometry</text>
+<rect x="410" y="325" width="300" height="135" rx="12" fill="#fff" stroke="#cfdaea"/>
+<text x="426" y="355" class="head">Image / 3D references</text>
+<text x="426" y="382" class="body">Qualified reference views, stored</text>
+<text x="426" y="403" class="body">depth, scale and camera-to-map</text>
+<text x="426" y="424" class="body">poses</text>
+<rect x="790" y="325" width="300" height="135" rx="12" fill="#fff" stroke="#cfdaea"/>
+<text x="806" y="355" class="head">Navigation context</text>
+<text x="806" y="382" class="body">Road/lane display assets may</text>
+<text x="806" y="403" class="body">include sourced and schematic</text>
+<text x="806" y="424" class="body">geometry.</text>
+<path d="M940 235V280H180V316" class="line"/>
+<path d="M940 280H560V316" class="line"/>
+<path d="M940 280V316" class="line"/>
+<text x="30" y="511" class="sub">Reference readiness and map processing success do not certify independent road-boundary accuracy.</text>
+</svg>

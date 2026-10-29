@@ -1,0 +1,128 @@
+{
+  "schema": "vhere.final-output-evaluation.v1",
+  "release_version": "0.8.0-demo",
+  "scope": "Historical offline visual-else-phone output policy on all held-out campus frames; not a measurement of the new signed APK",
+  "policy": "Use original accepted frozen visual output; otherwise preceding phone fix propagated by recorded speed/course. Both require a finite scored position. Phone availability makes full output coverage possible in this cohort.",
+  "availability_definition": "Time-weighted over [first exposure,last exposure], using each observation until the next. Not visual acceptance and not inferred from rendered frame count.",
+  "error_definition": "Frame-weighted horizontal error using the archived independent Fixed-GGA interpolation; all available output frames. No fitted alignment.",
+  "groups": {
+    "Q3": {
+      "frames": 13550,
+      "duration_s": 451.60119422500065,
+      "available_duration_s": 451.60119422500065,
+      "availability_rate": 1.0,
+      "scored_available_frames": 13550,
+      "final_error": {
+        "n": 13550,
+        "rmse_m": 1.9126166478156632,
+        "p50_m": 1.0750319581088714,
+        "p95_m": 3.9209213035108776,
+        "max_m": 6.272533354054809,
+        "over2m": 2968,
+        "over5m": 249
+      },
+      "phone_baseline_error": {
+        "n": 13550,
+        "rmse_m": 2.8935453155479647,
+        "p50_m": 2.7660575263921947,
+        "p95_m": 3.730060891732246,
+        "max_m": 5.161801780504721,
+        "over2m": 13103,
+        "over5m": 6
+      },
+      "reference_observation_epochs": 4505
+    },
+    "Q4": {
+      "frames": 9644,
+      "duration_s": 320.9631118624998,
+      "available_duration_s": 320.9631118624998,
+      "availability_rate": 1.0,
+      "scored_available_frames": 9644,
+      "final_error": {
+        "n": 9644,
+        "rmse_m": 2.785064699582067,
+        "p50_m": 3.1988293728787154,
+        "p95_m": 3.5497341717379456,
+        "max_m": 4.749432025599307,
+        "over2m": 6779,
+        "over5m": 0
+      },
+      "phone_baseline_error": {
+        "n": 9644,
+        "rmse_m": 3.3276006546052566,
+        "p50_m": 3.3457932938327053,
+        "p95_m": 3.981933453571369,
+        "max_m": 5.0995564348168,
+        "over2m": 9589,
+        "over5m": 2
+      },
+      "reference_observation_epochs": 3218
+    }
+  },
+  "request_timing": {
+    "scope": "Actual Pixel 5 recorded-input HTTPS transactions; all 109 requests retained. Not exposure-to-display latency or new release field accuracy.",
+    "requests": 109,
+    "latency": {
+      "client_terminal_ms": {
+        "n": 109,
+        "p50_ms": 1316.0,
+        "p95_ms": 1643.0,
+        "max_ms": 1992.0
+      },
+      "native_processing_ms": {
+        "n": 109,
+        "p50_ms": 969.0,
+        "p95_ms": 1281.9999999999998,
+        "max_ms": 1636.0
+      },
+      "native_queue_ms": {
+        "n": 109,
+        "p50_ms": 18.0,
+        "p95_ms": 30.799999999999983,
+        "max_ms": 61.0
+      },
+      "submission_RTT_ms": {
+        "n": 109,
+        "p50_ms": 254.0,
+        "p95_ms": 345.2,
+        "max_ms": 416.0
+      },
+      "unattributed_remainder_ms": {
+        "n": 109,
+        "p50_ms": 330.0,
+        "p95_ms": 424.59999999999997,
+        "max_ms": 536.0
+      }
+    },
+    "submission_cadence": [
+      {
+        "session": "A",
+        "offered_photos": 335,
+        "queries": 73,
+        "submission_gap_s": {
+          "p50": 4.957999999999998,
+          "p95": 5.01235000000001,
+          "max": 10.0
+        }
+      },
+      {
+        "session": "B",
+        "offered_photos": 160,
+        "queries": 36,
+        "submission_gap_s": {
+          "p50": 4.909999999999997,
+          "p95": 5.0084999999999935,
+          "max": 5.077999999999999
+        }
+      }
+    ]
+  },
+  "field_release_accuracy": "pending independent user field data",
+  "source_file_SHA256": {
+    "Q3": "b1810b1ce1b03e44127e0e4db648921200ed4b20d2ddc23db115a6608ae541a0",
+    "Q4": "9cc796d04fb5b1e92906030a9cc0f9fe10743cb86c9115ddf200b397d3b3fa1b",
+    "prior_derived_summary": "8bbb7634918b6a1aa1bf78433a586be91ca7abbade9c94739806a6fe3db549f0"
+  },
+  "new_inference": false,
+  "new_mapping": false
+}

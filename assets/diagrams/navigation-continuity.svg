@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 610" role="img" aria-label="Navigation source selection and continuity">
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#7890ad"/></marker><style>text{font-family:system-ui,sans-serif;fill:#20394f}.title{font-size:25px;font-weight:750;fill:#16354f}.sub{font-size:15px;fill:#60758c}.head{font-size:18px;font-weight:700}.body{font-size:15px;fill:#4e657d}.line{fill:none;stroke:#7890ad;stroke-width:2.5;marker-end:url(#arrow)}.dash{stroke-dasharray:6 5}</style></defs>
+<rect width="1120" height="610" rx="20" fill="#f4f7fb"/>
+<text x="30" y="42" class="title">VHERE | Navigation source selection and continuity</text>
+<text x="30" y="73" class="sub">Display presentation is kept separate from raw visual estimates and independent accuracy.</text>
+<rect x="30" y="115" width="300" height="120" rx="12" fill="#fff" stroke="#cfdaea"/>
+<text x="46" y="145" class="head">New visual result</text>
+<text x="46" y="172" class="body">Accept updates the visual anchor. A</text>
+<text x="46" y="193" class="body">rejection retains its reason.</text>
+<rect x="400" y="115" width="320" height="120" rx="12" fill="#e6f2ed" stroke="#cfdaea"/>
+<text x="416" y="145" class="head">Existing anchor still valid?</text>
+<text x="416" y="172" class="body">Age is measured from exposure, not</text>
+<text x="416" y="193" class="body">from a refreshed animation tick.</text>
+<rect x="790" y="115" width="300" height="120" rx="12" fill="#fff" stroke="#cfdaea"/>
+<text x="806" y="145" class="head">Phone observations</text>
+<text x="806" y="172" class="body">Position, speed, course, age and</text>
+<text x="806" y="193" class="body">validity</text>
+<path d="M330 175H391" class="line"/>
+<path d="M790 175H729" class="line"/>
+<rect x="30" y="310" width="300" height="130" rx="12" fill="#fff" stroke="#cfdaea"/>
+<text x="46" y="340" class="head">Valid visual anchor</text>
+<text x="46" y="367" class="body">Use fresh motion for bounded</text>
+<text x="46" y="388" class="body">propagation; do not predict through</text>
+<text x="46" y="409" class="body">stale or held motion.</text>
+<rect x="400" y="310" width="320" height="130" rx="12" fill="#fff" stroke="#cfdaea"/>
+<text x="416" y="340" class="head">Phone fallback</text>
+<text x="416" y="367" class="body">Use valid phone position when visual</text>
+<text x="416" y="388" class="body">positioning is unavailable or expired.</text>
+<rect x="790" y="310" width="300" height="130" rx="12" fill="#fff" stroke="#cfdaea"/>
+<text x="806" y="340" class="head">No valid source</text>
+<text x="806" y="367" class="body">Keep unavailable / held state</text>
+<text x="806" y="388" class="body">explicit; lane remains unconfirmed.</text>
+<path d="M500 235V270H180V301" class="line"/>
+<path d="M560 235V301" class="line"/>
+<path d="M620 235V270H940V301" class="line"/>
+<rect x="160" y="500" width="800" height="75" rx="12" fill="#fff" stroke="#cfdaea"/>
+<text x="176" y="530" class="head">Road association and vehicle display</text>
+<text x="176" y="557" class="body">Connectivity, reachability, road tangent, unknown lanes and explicit reacquisition</text>
+<path d="M180 440V475H400V491" class="line"/>
+<path d="M560 440V491" class="line"/>
+<path d="M940 440V475H720V491" class="line"/>
+</svg>
