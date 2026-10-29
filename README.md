@@ -7,7 +7,7 @@
 
 [Download signed APK](https://github.com/YangRiverJiang/vhere-demo/releases/download/v0.8.0-demo/VHERE-demo-0.8.0-release.apk) · [Release and checksums](https://github.com/YangRiverJiang/vhere-demo/releases/tag/v0.8.0-demo) · [User manual](docs/MANUAL.md) · [Results](docs/RESULTS.md)
 
-VHERE matches smartphone camera observations to a prepared visual map and presents a continuous navigation position. When visual positioning is unavailable, valid phone positioning supplies the fallback. The user-facing result is evaluated as **final position availability and error**, including that fallback.
+VHERE matches smartphone camera observations to a prepared visual map and presents a continuous navigation position for vehicles.
 
 ## See the navigation experience
 
